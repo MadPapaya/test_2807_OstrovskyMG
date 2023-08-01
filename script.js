@@ -32,7 +32,7 @@ function updateFreeBlocks() {
     }
   })
 
-  freeBlocksText.innerHTML = currentLength
+  freeBlocksText.innerHTML = MAX_LENGTH - currentLength
 }
 
 function orderBlocks() {
@@ -125,7 +125,7 @@ const init = (() => {
     block.addEventListener('dblclick', function () {
       const blocksToDelete = document.querySelectorAll(`.segment .${block.classList[0]}`)
       currentLength -= blocksToDelete.length
-      freeBlocksText.innerHTML = currentLength
+      freeBlocksText.innerHTML = MAX_LENGTH - currentLength
       blocksToDelete.forEach(item => {
         item.innerHTML = ''
         item.classList.remove(...item.classList)
