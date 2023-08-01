@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 40px 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+form {
+    background: #9a9999;
+    padding: 10px;
+    border-radius: 10px;
+}
+input, button {
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #222222;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+button:hover {
+    background: pink;
+}
+button:active {
+    background: deeppink;
+}
+.segment {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #222222;
+    padding: 4px;
+    display: flex;
+}
+.segment div {
+    height: 100%;
+    width: 1%;
+    user-select: none;
+    font-size: 12px;
+    line-height: 20px
+}
+.segment div.active {
+   box-shadow: black 0 4px 0, black 0 -4px 0;
+}
